@@ -1,2 +1,0 @@
-# gracewang
-personal website
