@@ -23,12 +23,12 @@ function About(){
                             </p>
                             <Grid container item spacing={2}>
                                 <Grid item xs={3}>
-                                    <Button>
+                                    <Button href='https://www.linkedin.com/in/gracewang809/'>
                                         Linkedin
                                     </Button>
                                 </Grid>
                                 <Grid item xs={3}>
-                                    <Button>
+                                    <Button href='https://github.com/gracewanggw/'>
                                         Github
                                     </Button>
                                 </Grid>
