@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Container from "@mui/material/Container";
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
@@ -19,13 +19,41 @@ const style = {
     p: 4,
   };
 
+const arrowStyle = {
+    position: 'fixed',
+    bottom: '20px',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    fontSize: '24px',
+    color: '#aaa',
+    opacity: '0.7',
+    animation: 'flash 1s infinite alternate',
+  };
+
 function About(){
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const [showArrow, setShowArrow] = useState(true);
+
+    const handleScroll = () => {
+      // Check the scroll position
+      if (window.scrollY > 50) {
+        setShowArrow(false); // Hide the arrow when scrolled down
+      } else {
+        setShowArrow(true); // Show the arrow when at the top
+      }
+    };
+  
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
 
     return (
-        <section id="about" style={{paddingTop: '48px'}}>
+        <section id="about" style={{paddingTop: '48px', height: '100vh'}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} alignItems="center">
                     <Grid item xs={7} >
@@ -78,6 +106,14 @@ function About(){
                             object-fit='cover'
                         />
                     </Grid>
+                    <Grid itme xs={12}>
+                        {showArrow && (
+                            <div className="scroll-indicator" style={arrowStyle}>
+                                <span style={{fontSize: '80px', alignSelf:'center'}}>&darr;</span>
+                            </div>
+                        )}
+                    </Grid>
+                    
                 </Grid>
             </Container>
         </section>

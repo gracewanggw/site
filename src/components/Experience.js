@@ -6,8 +6,8 @@ import Grid from "@mui/material/Grid";
 
 function Experience() {
     return (
-        <section id='experience' style={{paddingTop: '48px'}}>
-            <Divider style={{paddingBottom: '48px'}}></Divider>
+        <section id='experience' style={{height: '100vh'}}>
+            <Divider></Divider>
             <Container maxWidth="lg" style={{paddingTop: '48px'}}>
                 <h1 style={{textAlign: 'center', fontSize: '48px'}}>
                     Experience

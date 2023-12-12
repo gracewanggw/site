@@ -40,3 +40,12 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@keyframes flash {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
