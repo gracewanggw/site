@@ -54,7 +54,7 @@ function About(){
         <section id="about" style={{height: '100vh'}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} alignItems="center">
-                    <Grid item xs={6} >
+                    <Grid item xs={7} >
                         <>
                             <Typewriter text="👋 Hi, I'm Grace!" delay={120}></Typewriter>
                             <h2>
@@ -95,12 +95,12 @@ function About(){
                             </Grid>
                         </>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={5} alignContent='center'>
                         <img
                             alt="hero"
                             src="./clip-art.png"
-                            width='400px'
-                            height='200px'
+                            width='100%'
+                            height='100%'
                             object-fit='cover'
                         />
                     </Grid>
