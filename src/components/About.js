@@ -20,11 +20,9 @@ const style = {
   };
 
 const arrowStyle = {
-    position: 'fixed',
     bottom: '20px',
     left: '50%',
     transform: 'translateX(-50%)',
-    fontSize: '24px',
     color: '#aaa',
     opacity: '0.7',
     animation: 'flash 1s infinite alternate',
@@ -53,10 +51,10 @@ function About(){
     }, []);
 
     return (
-        <section id="about" style={{paddingTop: '48px', height: '100vh'}}>
+        <section id="about" style={{height: '100vh'}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} alignItems="center">
-                    <Grid item xs={7} >
+                    <Grid item xs={6} >
                         <>
                             <Typewriter text="👋 Hi, I'm Grace!" delay={120}></Typewriter>
                             <h2>
@@ -109,7 +107,7 @@ function About(){
                     <Grid itme xs={12}>
                         {showArrow && (
                             <div className="scroll-indicator" style={arrowStyle}>
-                                <span style={{fontSize: '80px', alignSelf:'center'}}>&darr;</span>
+                                <h1 style={{fontSize: '80px', float:'right'}}>&darr;</h1>
                             </div>
                         )}
                     </Grid>
