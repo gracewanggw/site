@@ -16,7 +16,7 @@ const Typewriter = ({ text, delay }) => {
     }
 
     return () => clearTimeout(timeout);
-  }, [currentIndex]);
+  }, [currentIndex, delay, text]);
 
   useEffect(() => {
     // Toggle cursor every 500 milliseconds
@@ -27,7 +27,6 @@ const Typewriter = ({ text, delay }) => {
     return () => clearInterval(cursorInterval);
   }, []);
 
-  console.log(currentText)
   return <h1 style={{fontSize: '80px'}}>
     {currentText}
     <span style={{ visibility: showCursor ? 'visible' : 'hidden' }}>&nbsp;|</span>
