@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 const Typewriter = ({ text, delay }) => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     let timeout;
@@ -17,8 +18,20 @@ const Typewriter = ({ text, delay }) => {
     return () => clearTimeout(timeout);
   }, [currentIndex]);
 
+  useEffect(() => {
+    // Toggle cursor every 500 milliseconds
+    const cursorInterval = setInterval(() => {
+      setShowCursor((prev) => !prev);
+    }, 500);
+
+    return () => clearInterval(cursorInterval);
+  }, []);
+
   console.log(currentText)
-  return <h1 style={{fontSize: '80px'}}>{currentText}</h1>;
+  return <h1 style={{fontSize: '80px'}}>
+    {currentText}
+    <span style={{ visibility: showCursor ? 'visible' : 'hidden' }}>&nbsp;|</span>
+  </h1>;
 };
 
 export default Typewriter;
