@@ -7,8 +7,8 @@ import Divider from '@mui/material/Divider';
 
 function Projects(){
     return (
-        <section id='projects' style={{paddingTop: '48px'}}>
-            <Divider style={{paddingBottom: '48px'}}></Divider>
+        <section id='projects' style={{height: '100vh'}}>
+            <Divider></Divider>
             <Container maxWidth="lg" style={{paddingTop: '48px'}} >
                 <h1 style={{textAlign: 'center', fontSize: '48px'}}>
                     Projects
