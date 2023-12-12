@@ -6,16 +6,12 @@ import Grid from "@mui/material/Grid";
 
 function Experience() {
     return (
-        <section id='experience'>
+        <section id='experience' style={{paddingTop: '48px'}}>
+            <Divider style={{paddingBottom: '12px'}}></Divider>
             <Container maxWidth="lg">
-                <h1 style={{textAlign: 'center'}}>
+                <h1 style={{textAlign: 'center', fontSize: '48px'}}>
                     Experience
                 </h1>
-                <h3 style={{textAlign: 'center'}}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                    laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                    Laborum, voluptas natus? 
-                </h3>
                 <Grid container spacing={3}>
                     { experience.map((exp) => (
                         <Grid item xs={12}>

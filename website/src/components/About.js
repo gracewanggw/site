@@ -5,21 +5,22 @@ import Button from '@mui/material/Button';
 
 function About(){
     return (
-        <section id="about">
+        <section id="about" style={{paddingTop: '48px'}}>
             <Container maxWidth="lg">
-                <Grid container spacing={2}>
-                    <Grid item xs={7}>
+                <Grid container spacing={2} alignItems="center">
+                    <Grid item xs={7} >
                         <>
-                            <h1>
-                                Hi, I'm Grace!
+                            <h1 style={{fontSize: '80px'}}>
+                                👋 Hi, I'm Grace!
                             </h1>
                             <h2>
-                                I love exploring the world through data.  
+                                I love developing solutions through code and exploring the world through data 🚀  
                             </h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                                laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                                Laborum, voluptas natus?
+                                I am a senior at Dartmouth College pursuing a dual major in Computer Science and Economics with a concentration in Math.
+                                I am passionate about translating ideas into impactful applications and uncovering meaningful insights from data.
+                                Whether it's crafting code for software solutions or delving into datasets to extract valuable narratives, I love that every line of code and every data point tell a unique story. 
+                                Beyond coding, you can find me playing pickleball, cooking, or solving puzzles.
                             </p>
                             <Grid container item spacing={2}>
                                 <Grid item xs={3}>
@@ -43,7 +44,10 @@ function About(){
                     <Grid item xs={5}>
                         <img
                             alt="hero"
-                            src="./logo192.png"
+                            src="./clip-art.png"
+                            width='400px'
+                            height='200px'
+                            object-fit='cover'
                         />
                     </Grid>
                 </Grid>
