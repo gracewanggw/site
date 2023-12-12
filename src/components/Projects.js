@@ -7,13 +7,13 @@ import Divider from '@mui/material/Divider';
 
 function Projects(){
     return (
-        <section id='projects' style={{paddingTop: '48px', paddingBottom: '48px'}}>
-            <Divider style={{paddingBottom: '12px'}}></Divider>
-            <Container maxWidth="lg">
+        <section id='projects' style={{paddingTop: '48px'}}>
+            <Divider style={{paddingBottom: '48px'}}></Divider>
+            <Container maxWidth="lg" style={{paddingTop: '48px'}} >
                 <h1 style={{textAlign: 'center', fontSize: '48px'}}>
                     Projects
                 </h1>
-                <Grid container spacing={4}>
+                <Grid container spacing={4} style={{padding: '12px'}}>
                     { projects.map((project) => (
                         <Grid item xs={6}>
                             <ProjectCard project={project}/>

@@ -7,18 +7,18 @@ import Grid from "@mui/material/Grid";
 function Experience() {
     return (
         <section id='experience' style={{paddingTop: '48px'}}>
-            <Divider style={{paddingBottom: '12px'}}></Divider>
-            <Container maxWidth="lg">
+            <Divider style={{paddingBottom: '48px'}}></Divider>
+            <Container maxWidth="lg" style={{paddingTop: '48px'}}>
                 <h1 style={{textAlign: 'center', fontSize: '48px'}}>
                     Experience
                 </h1>
                 <Grid container spacing={3}>
                     { experience.map((exp) => (
                         <Grid item xs={12}>
-                            <Divider></Divider>
                             <p> {exp.startDate} - {exp.endDate} </p>
                             <b> {exp.title} @<a href={exp.companyLink}>{exp.company}</a></b>
                             <p> {exp.description}</p>
+                            <Divider></Divider>
                         </Grid>
                         )
                     )}

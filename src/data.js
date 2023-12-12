@@ -76,7 +76,7 @@ export const experience = [
         title: "Software Engineering and Data Science Intern",
         company: "Johns Hopkins Univeristy Applied Physics Lab",
         companyLink: "https://www.jhuapl.edu/",
-        description: "During this 15-week internship, I honed my software engineering and data science skills by using graph-based techniques and custom training of SpaCy models to create an entity disambiguation system. I also researched and implemented 8 single-document summarization models and incorporated the best-performing model into a document processing pipeline and API endpoint.",
+        description: "During this 15-week internship, I applied my software engineering and data science skills by using graph-based techniques and custom training of SpaCy models to create an entity disambiguation system. I also researched and implemented 8 single-document summarization models and incorporated the best-performing model into a document processing pipeline and API endpoint.",
         startDate: "12/2022",
         endDate: "03/2023"
     }
