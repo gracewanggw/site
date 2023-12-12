@@ -1,35 +1,57 @@
 export const projects = [
     {
-      title: "React Reserve",
-      subtitle: "MERN Stack",
+      title: "Pine Beetle",
+      subtitle: "DALI Lab",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-1.gif",
-      link: "https://reactbootcamp.com",
+        "Website to help the US Forest Service and agroforestry researchers visualize and predict Southern Pine Beetle outbreaks",
+      stack: "React, Mongo, Express Node",
+      image: "./pine-beetle.png",
+      link: "https://pine-beetle-prediction-dev.netlify.app/",
     },
     {
-      title: "React Tracks",
-      subtitle: "React and Python",
+      title: "Tide Pool",
+      subtitle: "DALI Lab",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-2.gif",
-      link: "https://reedbarger.com",
+        "A computer vision tool to help the US National Park Service automate the process of counting and tracking baranacle populations",
+      stack: "Python, OpenCV, Tensorflow, Huggingface, Meta's Segment Anything Model",
+      image: "./barnacles.png",
+      link: "https://tidepool-tester.onrender.com/",
     },
     {
-      title: "DevChat",
-      subtitle: "React and Firebase",
+      title: "DataVinci",
+      subtitle: "DALI Lab",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-3.gif",
-      link: "https://jsbootcamp.com",
+        "A social-media platform for data fanatics! This project was made to help a Dartmouth professor gather data metrics on how people respond to differences in data visualizations -- a data visualization experiment.",
+      stack: "Python, JavaScript, React",
+      image: "./divas.png",
+      link: "https://art-science-datavis.onrender.com/",
     },
     {
-      title: "Epic Todo App",
-      subtitle: "React Hooks",
+        title: "Leafy Learn",
+        subtitle: "CS98",
+        description:
+          "A game that makes learning how to code less intimidating. Players will need to code to help save the forest!",
+        stack: "Unity, C, Figma",
+        image: "./leafy-learn.png",
+        link: "https://leafy-learn.itch.io/leafy-learn-23f",
+    },
+    {
+      title: "Travel Planner",
+      subtitle: "Code Day",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://pythonbootcamp.com",
+        "A tool that helps make sure you have everything you need for your next vacation by taking input of location and travel dates and using weather information to make suggestions",
+      stack: "HTML, CSS, JavaScript, Weather API",
+      image: "./trip-planner.png",
+      link: "https://trip-packer.vercel.app/",
+    },
+    {
+        title: "Avocado Prices",
+        subtitle: "CS89.21",
+        description:
+          "An exploratory project using avocado price data, macroeconomic data, and scraped news articles to see if US macroeconomic variables and news can predict avocado prices",
+        stack: "Python, Beautiful Soup, Matplotlib, Sklearn",
+        image: "./avocado.png",
+        link: "https://github.com/gracewanggw/avocado-economics/tree/main",
     },
   ];
 
@@ -38,7 +60,7 @@ export const experience = [
         title: "Data Scientist, Software Engineer, and Mentor",
         company: "DALI Lab",
         companyLink: "https://dali.dartmouth.edu/",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        description: "In my time at DALI, I started as a full-stack software engineer then data scientist working on long-term projects with clients such as the National Park Service and Dartmouth professors. Now, I have become a developer mentor so I am able to give back by providing guidance to new developers in the lab.",
         startDate: "03/2021",
         endDate: "present"
     },
@@ -46,7 +68,7 @@ export const experience = [
         title: "Software Engineering Intern",
         company: "Goldman Sachs",
         companyLink: "https://www.goldmansachs.com/",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        description: "During this 10-week summer internship, I worked on building a new tool for Decision Scientists to better catalog ML/ AI assets and SDLCs. The novelty of the project, afforded me near complete ownership in both design and development, allowing me to implement product research with end users to inform and support my decisions.",
         startDate: "06/2023",
         endDate: "08/2023"
     },
@@ -54,7 +76,7 @@ export const experience = [
         title: "Software Engineering and Data Science Intern",
         company: "Johns Hopkins Univeristy Applied Physics Lab",
         companyLink: "https://www.jhuapl.edu/",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        description: "During this 15-week internship, I honed my software engineering and data science skills by using graph-based techniques and custom training of SpaCy models to create an entity disambiguation system. I also researched and implemented 8 single-document summarization models and incorporated the best-performing model into a document processing pipeline and API endpoint.",
         startDate: "12/2022",
         endDate: "03/2023"
     }

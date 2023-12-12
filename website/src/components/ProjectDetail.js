@@ -9,7 +9,7 @@ const ProjectDetail = ({ project }) => {
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        backgroundColor: 'rgba(0, 0, 0, 0.9)',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -19,7 +19,8 @@ const ProjectDetail = ({ project }) => {
     >
       <h1>{project.title}</h1>
       <h3>{project.subtitle}</h3>
-      <p style={{textAlign: 'center'}}>{project.description}</p>
+      <p style={{textAlign: 'center', marginLeft: '4px', marginRight:'4px'}}>{project.description}</p>
+      <p style={{textAlign: 'center', marginLeft: '4px', marginRight:'4px'}}>Tech Stack: {project.stack}</p>
     </div>
   );
 };

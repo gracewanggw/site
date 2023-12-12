@@ -3,20 +3,17 @@ import {projects} from "../data";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import ProjectCard from "./ProjectCard";
+import Divider from '@mui/material/Divider';
 
 function Projects(){
     return (
-        <section id='projects'>
+        <section id='projects' style={{paddingTop: '48px', paddingBottom: '48px'}}>
+            <Divider style={{paddingBottom: '12px'}}></Divider>
             <Container maxWidth="lg">
-                <h1 style={{textAlign: 'center'}}>
+                <h1 style={{textAlign: 'center', fontSize: '48px'}}>
                     Projects
                 </h1>
-                <h3 style={{textAlign: 'center'}}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                    laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                    Laborum, voluptas natus?
-                </h3>
-                <Grid container spacing={3}>
+                <Grid container spacing={4}>
                     { projects.map((project) => (
                         <Grid item xs={6}>
                             <ProjectCard project={project}/>
