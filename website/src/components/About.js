@@ -2,6 +2,7 @@ import React from "react";
 import Container from "@mui/material/Container";
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
+import Typewriter from './Typewriter';
 
 function About(){
     return (
@@ -10,9 +11,7 @@ function About(){
                 <Grid container spacing={2} alignItems="center">
                     <Grid item xs={7} >
                         <>
-                            <h1 style={{fontSize: '80px'}}>
-                                👋 Hi, I'm Grace!
-                            </h1>
+                            <Typewriter text="👋 Hi, I'm Grace!" delay={150}></Typewriter>
                             <h2>
                                 I love developing solutions through code and exploring the world through data 🚀  
                             </h2>
