@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <a href={project.link}>
+    <a href={project.link} target="_blank" rel="noopener noreferrer">
         <div
             style={{
                 position: 'relative',

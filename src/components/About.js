@@ -51,7 +51,7 @@ function About(){
     }, []);
 
     return (
-        <section id="about" style={{height: '100vh'}}>
+        <section id="about" style={{paddingTop: '48px'}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} alignItems="center">
                     <Grid item xs={7} >
@@ -68,12 +68,12 @@ function About(){
                             </p>
                             <Grid container item spacing={2}>
                                 <Grid item xs={3}>
-                                    <Button href='https://www.linkedin.com/in/gracewang809/'>
+                                    <Button href='https://www.linkedin.com/in/gracewang809/' target="_blank" rel="noopener noreferrer">
                                         Linkedin
                                     </Button>
                                 </Grid>
                                 <Grid item xs={3}>
-                                    <Button href='https://github.com/gracewanggw/'>
+                                    <Button href='https://github.com/gracewanggw/' target="_blank" rel="noopener noreferrer">
                                         Github
                                     </Button>
                                 </Grid>
