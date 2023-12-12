@@ -16,7 +16,7 @@ function Experience() {
                     { experience.map((exp) => (
                         <Grid item xs={12}>
                             <p> {exp.startDate} - {exp.endDate} </p>
-                            <b> {exp.title} @<a href={exp.companyLink}>{exp.company}</a></b>
+                            <b> {exp.title} @<a href={exp.companyLink} target="_blank" rel="noopener noreferrer">{exp.company}</a></b>
                             <p> {exp.description}</p>
                             <Divider></Divider>
                         </Grid>
