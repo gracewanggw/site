@@ -19,13 +19,13 @@ function Skills(){
                     <Container maxWidth='md'>
                         <Grid container spacing={2}>
                             {frontendSkills.map((skill) => (
-                                <Grid item xs={3}>
+                                <Grid item xs={2}>
                                     <img 
                                         src={skill.logo}
                                         alt={skill.name}
                                         style={{ width: '100%', height: 'auto' }}
                                     />
-                                    <p>{skill.name}</p>
+                                    <p style={{textAlign:'center'}}>{skill.name}</p>
                                 </Grid>
                             ))}
                         </Grid>
@@ -38,13 +38,13 @@ function Skills(){
                     <Container maxWidth='md'>
                         <Grid container spacing={2}>
                             {backendSkills.map((skill) => (
-                                <Grid item xs={3}>
+                                <Grid item xs={2}>
                                     <img 
                                         src={skill.logo}
                                         alt={skill.name}
                                         style={{ width: '100%', height: 'auto' }}
                                     />
-                                    <p>{skill.name}</p>
+                                    <p style={{textAlign:'center'}}>{skill.name}</p>
                                 </Grid>
                             ))}
                         </Grid>
@@ -57,13 +57,13 @@ function Skills(){
                     <Container maxWidth='md'>
                         <Grid container spacing={2}>
                             {dataSkills.map((skill) => (
-                                <Grid item xs={3}>
+                                <Grid item xs={2}>
                                     <img 
                                         src={skill.logo}
                                         alt={skill.name}
                                         style={{ width: '100%', height: 'auto' }}
                                     />
-                                    <p>{skill.name}</p>
+                                    <p style={{textAlign:'center'}}>{skill.name}</p>
                                 </Grid>
                             ))}
                         </Grid>

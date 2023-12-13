@@ -88,77 +88,73 @@ export const frontendSkills = [
     name: 'ReactJS'
   },
   {
-    logo: './logo192.png',
+    logo: './js-logo.png',
     name: 'JavaScript'
   },
   {
-    logo: './logo192.png',
+    logo: './html-logo.png',
     name: 'HTML'
   },
   {
-    logo: './logo192.png',
+    logo: './css-logo.png',
     name: 'CSS'
   },
 ]
 
 export const backendSkills = [
   {
-    logo: './logo192.png',
+    logo: './java-logo.png',
     name: 'Java'
   },
   {
-    logo: './logo192.png',
+    logo: './python-logo.png',
     name: 'Python'
   },
   {
-    logo: './logo192.png',
+    logo: './spring-logo.png',
     name: 'Spring'
   },
   {
-    logo: './logo192.png',
+    logo: './mongo-logo.png',
     name: 'MongoDB'
-  },
-  {
-    logo: './logo192.png',
-    name: 'NodeJS'
   },
 ]
 
 export const dataSkills = [
   {
-    logo: './logo192.png',
+    logo: './python-logo.png',
     name: 'Python'
   },
   {
-    logo: './logo192.png',
+    logo: './spacy-logo.jpeg',
     name: 'SpaCy'
   },
   {
-    logo: './logo192.png',
+    logo: './pytorch-logo.png',
     name: 'PyTorch'
   },
   {
-    logo: './logo192.png',
+    logo: './opencv-logo.png',
     name: 'OpenCV'
   },
   {
-    logo: './logo192.png',
+    logo: './pandas-logo.png',
     name: 'Pandas'
   },
   {
-    logo: './logo192.png',
+    logo: './seaborn-logo.png',
     name: 'Seaborn'
   },
   {
-    logo: './logo192.png',
-    name: 'Sklearn'
+    logo: './sklearn-logo.png',
+    name: 'Scikit-Learn'
   },
   {
-    logo: './logo192.png',
+    logo: './matplot-logo.png',
     name: 'Matplotlib'
   },
   {
-    logo: './logo192.png',
+    logo: './d3-logo.jpeg',
     name: 'D3'
   },
 ]
