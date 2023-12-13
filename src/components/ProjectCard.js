@@ -13,6 +13,7 @@ const ProjectCard = ({ project }) => {
                 // margin: '10px',
                 cursor: 'pointer',
                 overflow: 'hidden',
+                borderRadius: '8px',
             }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
