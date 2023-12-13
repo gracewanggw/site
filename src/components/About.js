@@ -12,9 +12,10 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '36vw',
+    width: '80%', // Default width for larger screens
+    maxWidth: '400px',
     bgcolor: 'background.paper',
-    border: '2px solid #000',
+    borderRadius: '8px',
     boxShadow: 24,
     p: 4,
   };

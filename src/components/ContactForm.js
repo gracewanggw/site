@@ -113,7 +113,7 @@ function ContactForm({handleClose}){
                 />
             </div>
             <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                <Button type='submit' disabled={!isFormValid}>
+                <Button variant='contained' type='submit' disabled={!isFormValid}>
                     Submit
                 </Button>
             </div>

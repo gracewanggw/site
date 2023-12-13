@@ -12,7 +12,7 @@ function SkillsAccordion({title, skills}){
     }
 
     return(
-        <Accordion expanded={open} onChange={handleChange}>
+        <Accordion expanded={open} onChange={handleChange} sx={{borderRadius: '8px'}}>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
