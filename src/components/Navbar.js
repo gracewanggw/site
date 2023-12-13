@@ -7,10 +7,15 @@ import Button from "@mui/material/Button";
 import Hidden from "@mui/material/Hidden";
 
 function Navbar(){
-    const navItems = [{title: 'About', link: '#about'}, {title: 'Experience', link: "#experience"}, {title: "Projects", link: "#projects"}, {title: "Skills", link: "#skills"}];
+    const navItems = [
+        {title: 'About', link: '#about'},
+        {title: 'Experience', link: "#experience"},
+        {title: "Projects", link: "#projects"},
+        {title: "Skills", link: "#skills"}
+    ];
     
     return (
-        <AppBar component="nav" position="sticky" style={{ background: '#2E3B55' }}>
+        <AppBar component="nav" position="sticky" style={{ background: '#2E3B55', overflowX: 'auto' }}>
             <Toolbar>
                 <Typography
                     href='#'
@@ -29,17 +34,10 @@ function Navbar(){
                 >
                     GRACE WANG
                 </Typography>
-                {/* <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                    {navItems.map((item) => (
-                    <Button href={item.link} sx={{ color: '#fff' }}>
-                        {item.title}
-                    </Button>
-                    ))}
-                </Box> */}
                 <Hidden xsDown implementation="css">
                     <Box sx={{ display: 'flex' }}>
                         {navItems.map((item) => (
-                        <Button key={item.title} href={item.link} sx={{ color: '#fff', marginLeft: 2 }}>
+                        <Button key={item.title} href={item.link} sx={{ color: '#fff', padding: 2 }}>
                             {item.title}
                         </Button>
                         ))}
