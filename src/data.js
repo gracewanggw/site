@@ -3,7 +3,7 @@ export const projects = [
       title: "Pine Beetle",
       subtitle: "DALI Lab",
       description:
-        "Website to help the US Forest Service and agroforestry researchers visualize and predict Southern Pine Beetle outbreaks",
+        "Website to help the US Forest Service and agroforestry researchers visualize and predict Southern Pine Beetle outbreaks.",
       stack: "React, Mongo, Express Node",
       image: "./pine-beetle.png",
       link: "https://pine-beetle-prediction-dev.netlify.app/",
@@ -12,7 +12,7 @@ export const projects = [
       title: "Tide Pool",
       subtitle: "DALI Lab",
       description:
-        "A computer vision tool to help the US National Park Service automate the process of counting and tracking baranacle populations",
+        "A computer vision tool to help the US National Park Service automate the process of counting and tracking baranacle populations.",
       stack: "Python, OpenCV, Tensorflow, Huggingface, Meta's Segment Anything Model",
       image: "./barnacles.png",
       link: "https://tidepool-tester.onrender.com/",
@@ -39,7 +39,7 @@ export const projects = [
       title: "Travel Planner",
       subtitle: "Code Day",
       description:
-        "A tool that helps make sure you have everything you need for your next vacation by taking input of location and travel dates and using weather information to make suggestions",
+        "A tool that helps make sure you have everything you need for your next vacation by taking input of location and travel dates and using weather information to make suggestions.",
       stack: "HTML, CSS, JavaScript, Weather API",
       image: "./trip-planner.png",
       link: "https://trip-packer.vercel.app/",
@@ -48,7 +48,7 @@ export const projects = [
         title: "Avocado Prices",
         subtitle: "CS89.21",
         description:
-          "An exploratory project using avocado price data, macroeconomic data, and scraped news articles to see if US macroeconomic variables and news can predict avocado prices",
+          "An exploratory project using avocado price data, macroeconomic data, and scraped news articles to see if US macroeconomic variables and news can predict avocado prices.",
         stack: "Python, Beautiful Soup, Matplotlib, Sklearn",
         image: "./avocado.png",
         link: "https://github.com/gracewanggw/avocado-economics/tree/main",
@@ -68,7 +68,7 @@ export const experience = [
         title: "Software Engineering Intern",
         company: "Goldman Sachs",
         companyLink: "https://www.goldmansachs.com/",
-        description: "During this 10-week summer internship, I worked on building a new tool for Decision Scientists to better catalog ML/ AI assets and SDLCs. The novelty of the project, afforded me near complete ownership in both design and development, allowing me to implement product research with end users to inform and support my decisions.",
+        description: "During this 10-week summer internship, I worked on building a new tool for decision scientists to better catalog ML/ AI assets and SDLCs. The novelty of the project afforded me near complete ownership in both design and development, allowing me to implement product research with end users to inform and support my decisions.",
         startDate: "06/2023",
         endDate: "08/2023"
     },
