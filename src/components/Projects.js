@@ -15,7 +15,7 @@ function Projects(){
                 </h1>
                 <Grid container spacing={4} style={{padding: '12px'}} >
                     { projects.map((project) => (
-                        <Grid item xs={6}>
+                        <Grid item xs={6} style={{boxShadow: 12}}>
                             <ProjectCard project={project}/>
                         </Grid>
                         )
