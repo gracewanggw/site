@@ -81,3 +81,84 @@ export const experience = [
         endDate: "03/2023"
     }
 ]
+
+export const frontendSkills = [
+  {
+    logo: './logo192.png',
+    name: 'ReactJS'
+  },
+  {
+    logo: './logo192.png',
+    name: 'JavaScript'
+  },
+  {
+    logo: './logo192.png',
+    name: 'HTML'
+  },
+  {
+    logo: './logo192.png',
+    name: 'CSS'
+  },
+]
+
+export const backendSkills = [
+  {
+    logo: './logo192.png',
+    name: 'Java'
+  },
+  {
+    logo: './logo192.png',
+    name: 'Python'
+  },
+  {
+    logo: './logo192.png',
+    name: 'Spring'
+  },
+  {
+    logo: './logo192.png',
+    name: 'MongoDB'
+  },
+  {
+    logo: './logo192.png',
+    name: 'NodeJS'
+  },
+]
+
+export const dataSkills = [
+  {
+    logo: './logo192.png',
+    name: 'Python'
+  },
+  {
+    logo: './logo192.png',
+    name: 'SpaCy'
+  },
+  {
+    logo: './logo192.png',
+    name: 'PyTorch'
+  },
+  {
+    logo: './logo192.png',
+    name: 'OpenCV'
+  },
+  {
+    logo: './logo192.png',
+    name: 'Pandas'
+  },
+  {
+    logo: './logo192.png',
+    name: 'Seaborn'
+  },
+  {
+    logo: './logo192.png',
+    name: 'Sklearn'
+  },
+  {
+    logo: './logo192.png',
+    name: 'Matplotlib'
+  },
+  {
+    logo: './logo192.png',
+    name: 'D3'
+  },
+]
