@@ -21,13 +21,13 @@ function SkillsAccordion({title, skills}){
                 <Typography variant="h5" xs={{color: '#2E3B55'}}>{title}</Typography>
             </AccordionSummary>
             <AccordionDetails alignContent='center'>
-                <Grid container spacing={2} alignContent='center'>
+                <Grid container spacing={2} alignContent='center' >
                     {skills.map((skill) => (
-                        <Grid item xs={2} alignContent='center'>
+                        <Grid item xs={1} alignContent='center' style={{ height: '200px' }}>
                             <img 
                                 src={skill.logo}
                                 alt={skill.name}
-                                style={{ width: '100%', height: 'auto' }}
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
                             <p style={{textAlign:'center'}}>{skill.name}</p>
                         </Grid>
