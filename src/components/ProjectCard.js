@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
             <img
                 src={project.image}
                 alt={project.title}
-                style={{ width: '100%', height: 'auto' }}
+                style={{ width: '100%', height: 'auto', boxShadow: 24 }}
             />
             {isHovered && <ProjectDetail project={project} />}
         </div>
