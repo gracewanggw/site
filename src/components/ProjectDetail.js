@@ -19,8 +19,8 @@ const ProjectDetail = ({ project }) => {
     >
       <h1>{project.title}</h1>
       <h3>{project.subtitle}</h3>
-      <p style={{textAlign: 'center', marginLeft: '4px', marginRight:'4px'}}>{project.description}</p>
-      <p style={{textAlign: 'center', marginLeft: '4px', marginRight:'4px'}}>Tech Stack: {project.stack}</p>
+      <p style={{ fontSize: '1vw', textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
+      <p style={{ fontSize: '1vw', textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
     </div>
   );
 };
