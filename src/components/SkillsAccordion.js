@@ -2,16 +2,23 @@ import Accordion from "@mui/material/Accordion";
 import { AccordionDetails, Typography, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Grid from "@mui/material/Grid";
+import { useState } from "react";
 
 function SkillsAccordion({title, skills}){
+    const [open, setOpen] = useState(true);
+
+    const handleChange = () => {
+        setOpen(!open)
+    }
+
     return(
-        <Accordion>
+        <Accordion expanded={open} onChange={handleChange}>
             <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
             >
-                <Typography variant="h5">{title}</Typography>
+                <Typography variant="h5" xs={{color: '#2E3B55'}}>{title}</Typography>
             </AccordionSummary>
             <AccordionDetails alignContent='center'>
                 <Grid container spacing={2} alignContent='center'>
@@ -20,7 +27,7 @@ function SkillsAccordion({title, skills}){
                             <img 
                                 src={skill.logo}
                                 alt={skill.name}
-                                style={{ width: '100%', height: '100%' }}
+                                style={{ width: '100%', height: 'auto' }}
                             />
                             <p style={{textAlign:'center'}}>{skill.name}</p>
                         </Grid>
