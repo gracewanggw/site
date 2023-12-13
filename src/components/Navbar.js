@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Hidden from "@mui/material/Hidden";
 
 function Navbar(){
-    const navItems = [{title: 'About', link: '#about'}, {title: 'Experience', link: "#experience"}, {title: "Projects", link: "#projects"}];
+    const navItems = [{title: 'About', link: '#about'}, {title: 'Experience', link: "#experience"}, {title: "Projects", link: "#projects"}, {title: "Skills", link: "#skills"}];
     
     return (
         <AppBar component="nav" position="sticky" style={{ background: '#2E3B55' }}>

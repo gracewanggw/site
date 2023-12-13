@@ -154,7 +154,7 @@ export const dataSkills = [
     name: 'Matplotlib'
   },
   {
-    logo: './d3-logo.jpeg',
+    logo: './d3-logo.png',
     name: 'D3'
   },
 ]
