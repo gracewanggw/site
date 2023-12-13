@@ -18,10 +18,10 @@ function SkillsAccordion({title, skills}){
                 aria-controls="panel1a-content"
                 id="panel1a-header"
             >
-                <Typography variant="h5" xs={{color: '#2E3B55'}}>{title}</Typography>
+                <Typography fontWeight='bold' color='#2E3B55'>{title}</Typography>
             </AccordionSummary>
             <AccordionDetails alignContent='center'>
-                <Grid container item spacing={2} alignContent='center' >
+                <Grid container item spacing={4} alignContent='center' >
                     {skills.map((skill, index) => (
                         <Grid item xs={3} sm={2} md={1} lg={1} key={index} alignContent='center' >
                             <img 
