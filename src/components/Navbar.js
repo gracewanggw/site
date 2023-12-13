@@ -13,7 +13,7 @@ function Navbar(){
         <AppBar component="nav" position="sticky" style={{ background: '#2E3B55' }}>
             <Toolbar>
                 <Typography
-                    href='#about'
+                    href='#'
                     variant="h5"
                     noWrap
                     component="a"
