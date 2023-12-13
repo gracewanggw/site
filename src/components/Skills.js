@@ -12,7 +12,9 @@ function Skills(){
                     Languages and Technologies 💻
                 </h1>
                 <SkillsAccordion title='Frontend' skills={frontendSkills} />
+                <p></p>
                 <SkillsAccordion title='Backend' skills={backendSkills} />
+                <p></p>
                 <SkillsAccordion title='Data' skills={dataSkills} />
             </Container>
         </section>
