@@ -9,8 +9,8 @@ function Experience() {
         <section id='experience' style={{paddingTop: '48px', paddingBottom:'12px'}}>
             <Divider></Divider>
             <Container maxWidth="lg" style={{paddingTop: '48px'}}>
-                <h1 style={{textAlign: 'center', fontSize: '48px'}}>
-                    Experience
+                <h1 style={{textAlign: 'center', fontSize: '48px', color: '#2E3B55' }}>
+                    Experience ⏳
                 </h1>
                 <Grid container spacing={3}>
                     { experience.map((exp) => (

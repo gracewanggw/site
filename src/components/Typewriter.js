@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const Typewriter = ({ text, delay }) => {
+const Typewriter = ({ text, delay, font, align }) => {
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
@@ -27,9 +27,9 @@ const Typewriter = ({ text, delay }) => {
     return () => clearInterval(cursorInterval);
   }, []);
 
-  return <h1 style={{fontSize: '80px'}}>
+  return <h1 style={{fontSize: font === 'lg' ? '80px' : '48px', color: '#2E3B55', textAlign: align ? 'center' : 'left' }}>
     {currentText}
-    <span style={{ visibility: showCursor ? 'visible' : 'hidden' }}>&nbsp;|</span>
+    <span style={{ visibility: showCursor ? 'visible' : 'hidden', color: '#2E3B55' }}>&nbsp;|</span>
   </h1>;
 };
 

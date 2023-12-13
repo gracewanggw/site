@@ -55,8 +55,8 @@ function About(){
                 <Grid container spacing={2} alignItems="center">
                     <Grid item xs={7} >
                         <>
-                            <Typewriter text="👋 Hi, I'm Grace!" delay={120}></Typewriter>
-                            <h2>
+                            <Typewriter font="lg" text="👋 Hi, I'm Grace!" delay={120}></Typewriter>
+                            <h2 style={{color: '#2E3B55' }}>
                                 I love developing solutions through code and exploring the world through data 🚀  
                             </h2>
                             <p>
