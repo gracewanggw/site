@@ -22,7 +22,6 @@ const style = {
 const arrowStyle = {
     bottom: '20px',
     left: '50%',
-    transform: 'translateX(-50%)',
     color: '#aaa',
     opacity: '0.7',
     animation: 'flash 1s infinite alternate',
@@ -104,7 +103,7 @@ function About(){
                             object-fit='cover'
                         />
                     </Grid>
-                    <Grid itme xs={12}>
+                    <Grid item xs={12}>
                         {showArrow && (
                             <div className="scroll-indicator" style={arrowStyle}>
                                 <h1 style={{fontSize: '80px', float:'right'}}>&darr;</h1>
