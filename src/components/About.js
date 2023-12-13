@@ -67,18 +67,18 @@ function About(){
                                 Beyond coding, you can find me playing pickleball, cooking, or solving puzzles.
                             </p>
                             <Grid container item spacing={2}>
-                                <Grid item xs={3}>
-                                    <Button href='https://www.linkedin.com/in/gracewang809/' target="_blank" rel="noopener noreferrer">
+                                <Grid item xs={4}>
+                                    <Button style={{width:'100%'}} href='https://www.linkedin.com/in/gracewang809/' target="_blank" rel="noopener noreferrer">
                                         Linkedin
                                     </Button>
                                 </Grid>
-                                <Grid item xs={3}>
-                                    <Button href='https://github.com/gracewanggw/' target="_blank" rel="noopener noreferrer">
+                                <Grid item xs={4}>
+                                    <Button style={{width:'100%'}} href='https://github.com/gracewanggw/' target="_blank" rel="noopener noreferrer">
                                         Github
                                     </Button>
                                 </Grid>
-                                <Grid item xs={6}>
-                                    <Button onClick={handleOpen}>
+                                <Grid item xs={4}>
+                                    <Button style={{width:'100%'}} onClick={handleOpen}>
                                         Contact
                                     </Button>
                                     <Modal
