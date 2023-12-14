@@ -13,7 +13,7 @@ const ProjectDetail = ({ project }) => {
       // Calculate the font size proportionally to the smaller dimension (width or height)
       const calculatedFontSize = (0.07 * Math.min(containerWidth, containerHeight));
       setFontSizeH(`${calculatedFontSize}px`);
-      setFontSizeP(0.8*`${calculatedFontSize}px`);
+      setFontSizeP(`${0.8 * calculatedFontSize}px`);
     };
 
     calculateFontSize();
@@ -27,6 +27,7 @@ const ProjectDetail = ({ project }) => {
   }, []);
 
   console.log(fontSizeH);
+  console.log(fontSizeP);
 
   return (
     <div
@@ -47,8 +48,8 @@ const ProjectDetail = ({ project }) => {
     >
       <h1 style={{fontSize: fontSizeH}} >{project.title}</h1>
       <h3 style={{fontSize: fontSizeH}}>{project.subtitle}</h3>
-      <p style={{ fontSize: fontSizeP, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
-      <p style={{ fontSize: fontSizeP, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
+      <p style={{fontSize: fontSizeP, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
+      <p style={{fontSize: fontSizeP, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
     </div>
   );
 };
