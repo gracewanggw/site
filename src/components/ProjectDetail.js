@@ -17,10 +17,10 @@ const ProjectDetail = ({ project }) => {
         color: 'white',
       }}
     >
-      <h1 style={{fontSize: '4%'}}>{project.title}</h1>
-      <h3 style={{fontSize: '3%'}}>{project.subtitle}</h3>
-      <p style={{ fontSize: '2%', textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
-      <p style={{ fontSize: '2%', textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
+      <h1 style={{fontSize: '10%'}}>{project.title}</h1>
+      <h3 style={{fontSize: '6%'}}>{project.subtitle}</h3>
+      <p style={{ fontSize: '4%', textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
+      <p style={{ fontSize: '4%', textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
     </div>
   );
 };

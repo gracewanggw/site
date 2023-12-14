@@ -21,7 +21,7 @@ function SkillsAccordion({title, skills}){
                 <Typography fontWeight='bold' color='#2E3B55'>{title}</Typography>
             </AccordionSummary>
             <AccordionDetails alignContent='center'>
-                <Grid container item spacing={4} alignContent='center' >
+                <Grid container item spacing={4} alignContent='center' display='flex' flexDirection='row' >
                     {skills.map((skill, index) => (
                         <Grid item xs={3} sm={2} md={1} lg={1} key={index} alignContent='center' >
                             <img 
