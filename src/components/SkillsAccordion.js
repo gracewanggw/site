@@ -23,7 +23,7 @@ function SkillsAccordion({title, skills}){
             <AccordionDetails alignContent='center'>
                 <Grid container item spacing={4} justifyContent='center' alignContent='center' direction='row' >
                     {skills.map((skill, index) => (
-                        <Grid item xs={3} sm={2} md={1} lg={1} key={index} alignContent='center' padding='2px' >
+                        <Grid item xs={3} sm={2} md={1} lg={1} key={index} alignContent='center' padding='12px' >
                             <img 
                                 src={skill.logo}
                                 alt={skill.name}
