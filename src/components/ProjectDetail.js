@@ -45,10 +45,10 @@ const ProjectDetail = ({ project }) => {
         color: 'white',
       }}
     >
-      <h1 style={{fontSize: {fontSizeH}}} >{project.title}</h1>
-      <h3 style={{fontSize: {fontSizeH}}}>{project.subtitle}</h3>
-      <p style={{ fontSize: {fontSizeP}, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
-      <p style={{ fontSize: {fontSizeP}, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
+      <h1 style={{fontSize: fontSizeH}} >{project.title}</h1>
+      <h3 style={{fontSize: fontSizeH}}>{project.subtitle}</h3>
+      <p style={{ fontSize: fontSizeP, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
+      <p style={{ fontSize: fontSizeP, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
     </div>
   );
 };
