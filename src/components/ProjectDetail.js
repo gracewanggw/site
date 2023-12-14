@@ -2,7 +2,8 @@ import React, {useEffect, useState, useRef} from 'react';
 
 const ProjectDetail = ({ project }) => {
   const containerRef = useRef(null);
-  const [fontSizeH, setFontSizeH] = useState('2vw');
+  const [fontSizeH1, setFontSizeH1] = useState('2vw');
+  const [fontSizeH3, setFontSizeH3] = useState('2vw');
   const [fontSizeP, setFontSizeP] = useState('2vw');
 
   useEffect(() => {
@@ -10,10 +11,10 @@ const ProjectDetail = ({ project }) => {
       const containerWidth = containerRef.current.offsetWidth;
       const containerHeight = containerRef.current.offsetHeight;
 
-      // Calculate the font size proportionally to the smaller dimension (width or height)
-      const calculatedFontSize = (0.07 * Math.min(containerWidth, containerHeight));
-      setFontSizeH(`${calculatedFontSize}px`);
-      setFontSizeP(`${0.8 * calculatedFontSize}px`);
+      const calculatedFontSize = (0.1 * Math.min(containerWidth, containerHeight));
+      setFontSizeH1(`${calculatedFontSize}px`);
+      setFontSizeH3(`${0.8 * calculatedFontSize}px`);
+      setFontSizeP(`${0.6 * calculatedFontSize}px`);
     };
 
     calculateFontSize();
@@ -25,9 +26,6 @@ const ProjectDetail = ({ project }) => {
       window.removeEventListener('resize', calculateFontSize);
     };
   }, []);
-
-  console.log(fontSizeH);
-  console.log(fontSizeP);
 
   return (
     <div
@@ -46,8 +44,8 @@ const ProjectDetail = ({ project }) => {
         color: 'white',
       }}
     >
-      <h1 style={{fontSize: fontSizeH}} >{project.title}</h1>
-      <h3 style={{fontSize: fontSizeH}}>{project.subtitle}</h3>
+      <h1 style={{fontSize: fontSizeH1}} >{project.title}</h1>
+      <h3 style={{fontSize: fontSizeH3}}>{project.subtitle}</h3>
       <p style={{fontSize: fontSizeP, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
       <p style={{fontSize: fontSizeP, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
     </div>
