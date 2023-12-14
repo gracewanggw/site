@@ -26,11 +26,11 @@ const ProjectDetail = ({ project }) => {
   }, []);
 
   console.log(fontSize);
-  
+
   return (
     <div
+      ref={containerRef}
       style={{
-        ref:{containerRef},
         position: 'absolute',
         top: 0,
         left: 0,
