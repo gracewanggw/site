@@ -11,9 +11,9 @@ const ProjectDetail = ({ project }) => {
       const containerHeight = containerRef.current.offsetHeight;
 
       // Calculate the font size proportionally to the smaller dimension (width or height)
-      const calculatedFontSize = (0.1 * Math.min(containerWidth, containerHeight));
+      const calculatedFontSize = (0.07 * Math.min(containerWidth, containerHeight));
       setFontSizeH(`${calculatedFontSize}px`);
-      setFontSizeP(0.7*`${calculatedFontSize}px`);
+      setFontSizeP(0.8*`${calculatedFontSize}px`);
     };
 
     calculateFontSize();
