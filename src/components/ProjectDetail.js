@@ -2,17 +2,19 @@ import React, {useEffect, useState, useRef} from 'react';
 
 const ProjectDetail = ({ project }) => {
   const containerRef = useRef(null);
-  const [fontSize, setFontSize] = useState('2vw');
+  const [fontSizeH, setFontSizeH] = useState('2vw');
+  const [fontSizeP, setFontSizeP] = useState('2vw');
 
   useEffect(() => {
     const calculateFontSize = () => {
       const containerWidth = containerRef.current.offsetWidth;
       const containerHeight = containerRef.current.offsetHeight;
-      const baseFontSize = 3; // Adjust this based on your design
+      const baseFontSizeH = 3; // Adjust this based on your design
 
       // Calculate the font size proportionally to the smaller dimension (width or height)
-      const calculatedFontSize = (Math.min(containerWidth, containerHeight) / baseFontSize);
-      setFontSize(`${calculatedFontSize}px`);
+      const calculatedFontSize = (Math.min(containerWidth, containerHeight) / baseFontSizeH);
+      setFontSizeH(`${calculatedFontSize}px`);
+      setFontSizeP(-0.7*`${calculatedFontSize}px`);
     };
 
     calculateFontSize();
@@ -25,7 +27,7 @@ const ProjectDetail = ({ project }) => {
     };
   }, []);
 
-  console.log(fontSize);
+  console.log(fontSizeH);
 
   return (
     <div
@@ -44,10 +46,10 @@ const ProjectDetail = ({ project }) => {
         color: 'white',
       }}
     >
-      <h1 style={{fontSize: {fontSize}}} >{project.title}</h1>
-      <h3 style={{fontSize: {fontSize}}}>{project.subtitle}</h3>
-      <p style={{ textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
-      <p style={{ textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
+      <h1 style={{fontSize: {fontSizeH}}} >{project.title}</h1>
+      <h3 style={{fontSize: {fontSizeH}}}>{project.subtitle}</h3>
+      <p style={{ fontSize: {fontSizeP}, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
+      <p style={{ fontSize: {fontSizeP}, textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
     </div>
   );
 };
