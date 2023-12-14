@@ -40,7 +40,7 @@ const ProjectDetail = ({ project }) => {
       }}
     >
       <h1 style={{fontSize: {fontSize}}} >{project.title}</h1>
-      <h3 style={{fontSize: 0.7*{fontSize}}}>{project.subtitle}</h3>
+      <h3 style={{fontSize: {fontSize}}}>{project.subtitle}</h3>
       <p style={{ textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>{project.description}</p>
       <p style={{ textAlign: 'center', marginLeft: '1vw', marginRight:'1vw'}}>Tech Stack: {project.stack}</p>
     </div>
