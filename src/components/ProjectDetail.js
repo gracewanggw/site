@@ -7,10 +7,12 @@ const ProjectDetail = ({ project }) => {
   useEffect(() => {
     const calculateFontSize = () => {
       const containerWidth = containerRef.current.offsetWidth;
-      const numberOfColumns = 2; // Change this based on your layout
-      const baseFontSize = 2; // Change this based on your design
-      const calculatedFontSize = (containerWidth / numberOfColumns) / baseFontSize;
-      setFontSize(`${calculatedFontSize}vw`);
+      const containerHeight = containerRef.current.offsetHeight;
+      const baseFontSize = 2; // Adjust this based on your design
+
+      // Calculate the font size proportionally to the smaller dimension (width or height)
+      const calculatedFontSize = (Math.min(containerWidth, containerHeight) / baseFontSize);
+      setFontSize(`${calculatedFontSize}px`);
     };
 
     calculateFontSize();
@@ -23,9 +25,12 @@ const ProjectDetail = ({ project }) => {
     };
   }, []);
 
+  console.log(fontSize);
+  
   return (
     <div
       style={{
+        ref:{containerRef},
         position: 'absolute',
         top: 0,
         left: 0,
