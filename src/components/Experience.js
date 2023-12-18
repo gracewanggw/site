@@ -4,10 +4,24 @@ import Divider from "@mui/material/Divider";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import LineChart from "./LineChart";
+import axios from 'axios';
 
 function Experience() {
     const lineChartRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
+    const [data, setData] = useState();
+
+    useEffect(() => {
+        axios.get('https://site-api-3nj6.onrender.com/data')
+            .then(res => {
+                console.log(res)
+                setData(res.data)
+            })
+            .catch(error => {
+                console.log(error)
+            });
+
+    }, [])
 
     useEffect(() => {
         const options = {
@@ -60,7 +74,7 @@ function Experience() {
                 </Grid>
             </Container>
             <Grid item xs={12} ref={lineChartRef} >
-                {isVisible && <LineChart />}
+                {isVisible && <LineChart data={data} />}
             </Grid> 
         </section>
     );
