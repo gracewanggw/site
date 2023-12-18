@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AreaChart, Area, XAxis, Tooltip } from "recharts";
-import axios from 'axios';
 
 // const data = [{'month': 'Jan 2023', 'GitHub Contributions': 3},
 // {'month': 'Feb 2023', 'GitHub Contributions': 4},
@@ -15,24 +14,10 @@ import axios from 'axios';
 // {'month': 'Nov 2023', 'GitHub Contributions': 14},
 // {'month': 'Dec 2023', 'GitHub Contributions': 131}];
 
-const LineChart = () => {
+const LineChart = ({data}) => {
     const containerRef = useRef(null);
     const [myWidth, setMyWidth] = useState(800);
     const [myHeight, setMyHeight] = useState(200);
-    const [data, setData] = useState();
-
-    useEffect(() => {
-        // axios.get('https://site-api-3nj6.onrender.com/data')
-        axios.get('http://127.0.0.1:8000/data')
-            .then(res => {
-                console.log(res)
-                setData(res.data)
-            })
-            .catch(error => {
-                console.log(error)
-            });
-
-    }, [])
 
 
 
