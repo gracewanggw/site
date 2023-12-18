@@ -1,7 +1,2 @@
-fastapi==0.95.1
-beautifulsoup4 @ file:///home/linux1/recipes/ci/beautifulsoup4_1610988766420/work
-requests @ file:///tmp/build/80754af9/requests_1629994808627/work
-regex @ file:///opt/concourse/worker/volumes/live/84f678f0-8362-498c-6bbf-bb60d23a10cc/volume/regex_1629302094173/work
-python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
-sortedcollections @ file:///tmp/build/80754af9/sortedcollections_1611172717284/work
-uvicorn==0.21.1
+fastapi
+uvicorn
