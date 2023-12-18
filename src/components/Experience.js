@@ -27,7 +27,7 @@ function Experience() {
         const options = {
             root: null,
             rootMargin: "0px",
-            threshold: 0.5, // Adjust this threshold as needed
+            threshold: 1, // Adjust this threshold as needed
         };
 
         const observer = new IntersectionObserver(handleIntersection, options);
@@ -73,9 +73,12 @@ function Experience() {
                     )}
                 </Grid>
             </Container>
-            <Grid item xs={12} ref={lineChartRef} >
-                {isVisible && <LineChart data={data} />}
-            </Grid> 
+            <Container maxWidth="lg">
+                <Grid item xs={12} ref={lineChartRef} >
+                    {isVisible && <LineChart data={data} />}
+                </Grid> 
+            </Container>
+            
         </section>
     );
 }

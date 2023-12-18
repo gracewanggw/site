@@ -1,19 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AreaChart, Area, XAxis, Tooltip } from "recharts";
 
-// const data = [{'month': 'Jan 2023', 'GitHub Contributions': 3},
-// {'month': 'Feb 2023', 'GitHub Contributions': 4},
-// {'month': 'Mar 2023', 'GitHub Contributions': 0},
-// {'month': 'Apr 2023', 'GitHub Contributions': 31},
-// {'month': 'May 2023', 'GitHub Contributions': 13},
-// {'month': 'Jun 2023', 'GitHub Contributions': 0},
-// {'month': 'Jul 2023', 'GitHub Contributions': 0},
-// {'month': 'Aug 2023', 'GitHub Contributions': 0},
-// {'month': 'Sep 2023', 'GitHub Contributions': 14},
-// {'month': 'Oct 2023', 'GitHub Contributions': 17},
-// {'month': 'Nov 2023', 'GitHub Contributions': 14},
-// {'month': 'Dec 2023', 'GitHub Contributions': 131}];
-
 const LineChart = ({data}) => {
     const containerRef = useRef(null);
     const [myWidth, setMyWidth] = useState(800);
