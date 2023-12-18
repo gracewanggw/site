@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import Container from "@mui/material/Container";
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
@@ -6,6 +6,7 @@ import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Typewriter from './Typewriter';
 import ContactForm from './ContactForm';
+import LineChart from "./LineChart";
 
 const style = {
     position: 'absolute',
@@ -20,38 +21,14 @@ const style = {
     p: 4,
   };
 
-const arrowStyle = {
-    bottom: '20px',
-    left: '50%',
-    color: '#aaa',
-    opacity: '0.7',
-    animation: 'flash 1s infinite alternate',
-  };
 
 function About(){
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    const [showArrow, setShowArrow] = useState(true);
-
-    const handleScroll = () => {
-      // Check the scroll position
-      if (window.scrollY > 50) {
-        setShowArrow(false); // Hide the arrow when scrolled down
-      } else {
-        setShowArrow(true); // Show the arrow when at the top
-      }
-    };
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
 
     return (
-        <section id="about" style={{paddingTop: '48px'}}>
+        <section id="about" style={{paddingTop: '48px', paddingBottom: '48px'}}>
             <Container maxWidth="lg">
                 <Grid container spacing={2} alignItems="center">
                     <Grid item xs={7} >
@@ -103,16 +80,8 @@ function About(){
                             height='100%'
                             object-fit='cover'
                         />
-                    </Grid>
-                    <Grid item xs={12}>
-                        {showArrow && (
-                            <div className="scroll-indicator" style={arrowStyle}>
-                                <h1 style={{fontSize: '80px', float:'right'}}>&darr;</h1>
-                            </div>
-                        )}
-                    </Grid>
-                    
-                </Grid>
+                    </Grid>   
+                </Grid> 
             </Container>
         </section>
     );
