@@ -45,8 +45,8 @@ const LineChart = ({data}) => {
             <Area
                 type="monotone"
                 dataKey="GitHub Contributions"
-                stroke="#8884d8"
-                fill="#8884d8"
+                stroke="#8cad94"
+                fill="#8cad94"
             />
             </AreaChart>
         </div>
