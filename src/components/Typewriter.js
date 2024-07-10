@@ -27,9 +27,9 @@ const Typewriter = ({ text, delay, font, align }) => {
     return () => clearInterval(cursorInterval);
   }, []);
 
-  return <h1 style={{fontSize: font === 'lg' ? '80px' : '48px', color: '#46694e', textAlign: align ? 'center' : 'left' }}>
+  return <h1 style={{fontSize: font === 'lg' ? '80px' : '48px', color: '#2E3B55', textAlign: align ? 'center' : 'left' }}>
     {currentText}
-    <span style={{ visibility: showCursor ? 'visible' : 'hidden', color: '#46694e' }}>&nbsp;|</span>
+    <span style={{ visibility: showCursor ? 'visible' : 'hidden', color: '#2E3B55' }}>&nbsp;|</span>
   </h1>;
 };
 

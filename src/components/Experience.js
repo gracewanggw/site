@@ -6,11 +6,10 @@ import Grid from "@mui/material/Grid";
 import LineChart from "./LineChart";
 import axios from 'axios';
 
-const defaultData = [{"month":"January 2023","GitHub Contributions":3},{"month":"February 2023","GitHub Contributions":4},{"month":"March 2023","GitHub Contributions":0},{"month":"April 2023","GitHub Contributions":31},{"month":"May 2023","GitHub Contributions":13},{"month":"June 2023","GitHub Contributions":0},{"month":"July 2023","GitHub Contributions":0},{"month":"August 2023","GitHub Contributions":0},{"month":"September 2023","GitHub Contributions":14},{"month":"October 2023","GitHub Contributions":17},{"month":"November 2023","GitHub Contributions":14},{"month":"December 2023","GitHub Contributions":147}]
 function Experience() {
     const lineChartRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
-    const [data, setData] = useState(defaultData);
+    const [data, setData] = useState();
 
     useEffect(() => {
         axios.get('https://site-api-3nj6.onrender.com/data')
@@ -39,7 +38,7 @@ function Experience() {
 
         return () => {
             if (lineChartRef.current) {
-                observer.unobserve(lineChartRef.current);
+            observer.unobserve(lineChartRef.current);
             }
         };
     }, []);
@@ -47,9 +46,7 @@ function Experience() {
     const handleIntersection = (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                setIsVisible(true);
-            } else{
-                setIsVisible(false);
+            setIsVisible(true);
             }
         });
     };
