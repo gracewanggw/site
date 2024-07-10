@@ -6,6 +6,7 @@ import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Typewriter from './Typewriter';
 import ContactForm from './ContactForm';
+import LineChart from "./LineChart";
 
 const style = {
     position: 'absolute',
@@ -33,7 +34,7 @@ function About(){
                     <Grid item xs={7} >
                         <>
                             <Typewriter font="lg" text="👋 Hi, I'm Grace!" delay={120}></Typewriter>
-                            <h2 style={{color: '#46694e' }}>
+                            <h2 style={{color: '#2E3B55' }}>
                                 I love developing solutions through code and exploring the world through data 🚀  
                             </h2>
                             <p>
