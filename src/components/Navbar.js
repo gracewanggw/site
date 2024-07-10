@@ -15,7 +15,7 @@ function Navbar(){
     ];
     
     return (
-        <AppBar component="nav" position="sticky" style={{ background: '#2E3B55', overflowX: 'auto' }}>
+        <AppBar component="nav" position="sticky" style={{ background: '#46694e', overflowX: 'auto' }}>
             <Toolbar>
                 <Typography
                     href='#'
