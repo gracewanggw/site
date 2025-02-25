@@ -36,6 +36,15 @@ export const projects = [
         link: "https://leafy-learn.itch.io/leafy-learn-23f",
     },
     {
+      title: "Insider Trading: A Event Study",
+      subtitle: "Economics Senior Paper",
+      description:
+        "A statistical analysis on the impact of corporate insider traders and stock returns. Documented findings to a 15 page research paper.",
+      stack: "STATA, LaTeX",
+      image: "./econ-paper.png",
+      link: "https://drive.google.com/file/d/1N6LHBtW81WeAvJ5xq6DkrrOB1qe4TaKr/view?usp=sharing",
+  },
+    {
       title: "Travel Planner",
       subtitle: "Code Day",
       description:
@@ -44,33 +53,32 @@ export const projects = [
       image: "./trip-planner.png",
       link: "https://trip-packer.vercel.app/",
     },
-    {
-        title: "Avocado Prices",
-        subtitle: "CS89.21",
-        description:
-          "An exploratory project using avocado price data, macroeconomic data, and scraped news articles to see if US macroeconomic variables and news can predict avocado prices.",
-        stack: "Python, Beautiful Soup, Matplotlib, Sklearn",
-        image: "./avocado.png",
-        link: "https://github.com/gracewanggw/avocado-economics/tree/main",
-    },
   ];
 
 export const experience = [
     {
+      title: "Quantitative Research & Portfolio Management",
+      company: "Goldman Sachs",
+      companyLink: "https://www.goldmansachs.com/",
+      description: "Quantitative Investment Strategies (QIS) group within Goldman Sachs Asset Management. Using Python and statistical methods for systematic investing",
+      startDate: "7/2024",
+      endDate: "Present"
+  },
+    {
         title: "Data Scientist, Software Engineer, and Mentor",
         company: "DALI Lab",
         companyLink: "https://dali.dartmouth.edu/",
-        description: "In my time at DALI, I started as a full-stack software engineer then data scientist working on long-term projects with clients such as the National Park Service and Dartmouth professors. Now, I have become a developer mentor so I am able to give back by providing guidance to new developers in the lab.",
-        startDate: "03/2021",
-        endDate: "present"
+        description: "In my time at DALI, I started as a full-stack software engineer, later a data scientist working on long-term projects with clients such as the National Park Service and Dartmouth professors. Now, I have become a developer mentor so I am able to give back by providing guidance to new developers in the lab.",
+        startDate: "3/2021",
+        endDate: "6/2024"
     },
     {
         title: "Software Engineering Intern",
         company: "Goldman Sachs",
         companyLink: "https://www.goldmansachs.com/",
         description: "During this 10-week summer internship, I worked on building a new tool for decision scientists to better catalog ML/ AI assets and SDLCs. The novelty of the project afforded me near complete ownership in both design and development, allowing me to implement product research with end users to inform and support my decisions.",
-        startDate: "06/2023",
-        endDate: "08/2023"
+        startDate: "6/2023",
+        endDate: "8/2023"
     },
     {
         title: "Software Engineering and Data Science Intern",
@@ -78,7 +86,7 @@ export const experience = [
         companyLink: "https://www.jhuapl.edu/",
         description: "During this 15-week internship, I applied my software engineering and data science skills by using graph-based techniques and custom training of SpaCy models to create an entity disambiguation system. I also researched and implemented 8 single-document summarization models and incorporated the best-performing model into a document processing pipeline and API endpoint.",
         startDate: "12/2022",
-        endDate: "03/2023"
+        endDate: "3/2023"
     }
 ]
 

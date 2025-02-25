@@ -30,13 +30,23 @@ def extract(input_string):
 def get_date(day):
     current_date = datetime.now()
     current_year = current_date.year
-    
-    date_object = datetime.strptime(day, "%B %d")
 
-    # If the date is before the current date, use the current year; otherwise, use the previous year
+    try:
+        # Attempt to parse the date assuming it's in the current year
+        date_object = datetime.strptime(day, "%B %d")
+
+        # Check if the parsed date is February 29 in a non-leap year
+        if day == "February 29":
+            if not (current_year % 4 == 0 and (current_year % 100 != 0 or current_year % 400 == 0)):
+                print(f"Adjusting non-leap year date: {day}")
+                date_object = datetime.strptime("February 28", "%B %d")
+
+    except ValueError as e:
+        print(f"Error parsing date: {day} - {e}")
+        return None  # Skip invalid dates
+
+    # Assign the correct year
     updated_year = current_year if date_object.replace(year=current_year) <= current_date else current_year - 1
-
-    # Set the year in the datetime object
     date_object = date_object.replace(year=updated_year)
 
     return date_object.strftime("%B %d, %Y")
@@ -48,13 +58,14 @@ def get_data():
     for item in items:
         day, contribs = extract(item)
         
-        date_object = datetime.strptime(get_date(day), "%B %d, %Y")
+        my_date = get_date(day)
+        if my_date:
+            date_object = datetime.strptime(my_date, "%B %d, %Y")
+            # Extract the month key (e.g., 'December')
+            month_key = date_object.strftime("%B %Y")
 
-        # Extract the month key (e.g., 'December')
-        month_key = date_object.strftime("%B %Y")
-
-        # Update the contributions for the corresponding month
-        contrib_dict[month_key] += contribs
+            # Update the contributions for the corresponding month
+            contrib_dict[month_key] += contribs
 
     data = []
 
