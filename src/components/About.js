@@ -6,7 +6,6 @@ import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Typewriter from './Typewriter';
 import ContactForm from './ContactForm';
-import LineChart from "./LineChart";
 
 const style = {
     position: 'absolute',
@@ -38,10 +37,10 @@ function About(){
                                 I love developing solutions through code and exploring the world through data 🚀  
                             </h2>
                             <p>
-                                I am a senior at Dartmouth College pursuing a dual major in Computer Science and Economics with a concentration in Math.
+                                I am a Quantitative Research Analyst in New York City with a background in Computer Science and Economics from Dartmouth.
                                 I am passionate about translating ideas into impactful applications and uncovering meaningful insights from data.
                                 Whether it's crafting code for software solutions or delving into datasets to extract valuable narratives, I love that every line of code and every data point tell a unique story. 
-                                Beyond coding, you can find me playing pickleball, cooking, or solving puzzles.
+                                In my free time, you can find me playing pickleball, cooking, and solving NYT puzzles.
                             </p>
                             <Grid container item spacing={2}>
                                 <Grid item xs={4}>
